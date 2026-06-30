@@ -1,4 +1,4 @@
-in<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -230,6 +230,13 @@ in<!DOCTYPE html>
     background: var(--shelf);
     display:flex; align-items:center; justify-content:center;
     font-size: 1.35rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .icon-medal img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .find-no{
     font-size: 0.72rem; font-weight:700; letter-spacing:.08em;
@@ -402,25 +409,25 @@ in<!DOCTYPE html>
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const products = [
-    { name: "Coffee scoop", desc: "Level scoops, no more guesswork.", icon: "☕", url: "https://a.co/d/04utX6EE" },
-    { name: "Non-stick pan", desc: "An everyday pan that earns its spot.", icon: "🍳", url: "https://a.co/d/09lsYLnO" },
-    { name: "Rotating cable organizer", desc: "Cord chaos, contained.", icon: "🔌", url: "https://a.co/d/02jsPxcM" },
-    { name: "Cat treat spoon", desc: "Mess-free treats for your favorite gremlin.", icon: "🐱", url: "https://a.co/d/0eCg7f0t" },
-    { name: "Lemon squeezer", desc: "Every last drop, none of the seeds.", icon: "🍋", url: "https://a.co/d/08S1cUGM" },
-    { name: "Tripod clothes drying rack", desc: "Folds flat, dries fast.", icon: "🧺", url: "https://a.co/d/02Z29sXL" },
-    { name: "Defrosting tray", desc: "Skip the microwave, thaw the smart way.", icon: "🧊", url: "https://a.co/d/01I8APr7" },
-    { name: "Kitchen sink strainer", desc: "Catches the gunk before it's a problem.", icon: "🚰", url: "https://a.co/d/0hoL7wOk" },
-    { name: "Ice cream sandwich scoop", desc: "Bakery-style scoops at home.", icon: "🍦", url: "https://a.co/d/05nWHqSE" },
-    { name: "Dish brush with soap dispenser", desc: "One squeeze, ready to scrub.", icon: "🧽", url: "https://a.co/d/0cdzyOwm" },
-    { name: "Sliding cabinet organizer", desc: "Finally, you can see the back shelf.", icon: "🗂️", url: "https://a.co/d/0fvYzR5M" },
-    { name: "Detergent pump", desc: "No more sloppy measuring caps.", icon: "🧴", url: "https://a.co/d/03HXEUKe" },
-    { name: "Glassware polisher", desc: "Streak-free shine in seconds.", icon: "✨", url: "https://a.co/d/09I3qU0Q" },
-    { name: "Portable smart TV", desc: "Stream anywhere in the house.", icon: "📺", url: "https://a.co/d/02I7PruS" },
-    { name: "Cookie press kit", desc: "Bakery shapes, zero piping skills needed.", icon: "🍪", url: "https://a.co/d/0fNtsptK" },
-    { name: "Indoor grill", desc: "Grill season, all year round.", icon: "🍖", url: "https://a.co/d/07LLXKmA" },
-    { name: "Wooden trivets", desc: "Protect the counters in style.", icon: "🪵", url: "https://a.co/d/08Qfv46z" },
-    { name: "Mini lint roller", desc: "Pocket-sized, always within reach.", icon: "🧹", url: "https://a.co/d/03hDLkAy" },
-    { name: "Bed wedge pillow", desc: "Prop up, relax, read in peace.", icon: "🛏️", url: "https://a.co/d/07vFBppu" }
+    { name: "Coffee scoop", desc: "Level scoops, no more guesswork.", img: "assets/images/coffee-scoop.png", url: "https://a.co/d/04utX6EE" },
+    { name: "Non-stick pan", desc: "An everyday pan that earns its spot.", img: "assets/images/pan.png", url: "https://a.co/d/09lsYLnO" },
+    { name: "Rotating cable organizer", desc: "Cord chaos, contained.", img: "assets/images/rotating-cable-organizer.png", url: "https://a.co/d/02jsPxcM" },
+    { name: "Cat treat spoon", desc: "Mess-free treats for your favorite gremlin.", img: "assets/images/cat-treat-spoon.png", url: "https://a.co/d/0eCg7f0t" },
+    { name: "Lemon squeezer", desc: "Every last drop, none of the seeds.", img: "assets/images/lemon-squeezer.png", url: "https://a.co/d/08S1cUGM" },
+    { name: "Tripod clothes drying rack", desc: "Folds flat, dries fast.", img: "assets/images/drying-rack.png", url: "https://a.co/d/02Z29sXL" },
+    { name: "Defrosting tray", desc: "Skip the microwave, thaw the smart way.", img: "assets/images/defrosting-tray.png", url: "https://a.co/d/01I8APr7" },
+    { name: "Kitchen sink strainer", desc: "Catches the gunk before it's a problem.", img: "assets/images/sink-strainer.png", url: "https://a.co/d/0hoL7wOk" },
+    { name: "Ice cream sandwich scoop", desc: "Bakery-style scoops at home.", img: "assets/images/ice-cream-scoop.png", url: "https://a.co/d/05nWHqSE" },
+    { name: "Dish brush with soap dispenser", desc: "One squeeze, ready to scrub.", img: "assets/images/dish-brush.png", url: "https://a.co/d/0cdzyOwm" },
+    { name: "Sliding cabinet organizer", desc: "Finally, you can see the back shelf.", img: "assets/images/cabinet-organizer.png", url: "https://a.co/d/0fvYzR5M" },
+    { name: "Detergent pump", desc: "No more sloppy measuring caps.", img: "assets/images/detergent-pump.png", url: "https://a.co/d/03HXEUKe" },
+    { name: "Glassware polisher", desc: "Streak-free shine in seconds.", img: "assets/images/glassware-polisher.png", url: "https://a.co/d/09I3qU0Q" },
+    { name: "Portable smart TV", desc: "Stream anywhere in the house.", img: "assets/images/smart-tv.png", url: "https://a.co/d/02I7PruS" },
+    { name: "Cookie press kit", desc: "Bakery shapes, zero piping skills needed.", img: "assets/images/cookie-press.png", url: "https://a.co/d/0fNtsptK" },
+    { name: "Indoor grill", desc: "Grill season, all year round.", img: "assets/images/indoor-grill.png", url: "https://a.co/d/07LLXKmA" },
+    { name: "Wooden trivets", desc: "Protect the counters in style.", img: "assets/images/wooden-trivets.png", url: "https://a.co/d/08Qfv46z" },
+    { name: "Mini lint roller", desc: "Pocket-sized, always within reach.", img: "assets/images/lint-roller.png", url: "https://a.co/d/03hDLkAy" },
+    { name: "Bed wedge pillow", desc: "Prop up, relax, read in peace.", img: "assets/images/bed-wedge-pillow.png", url: "https://a.co/d/07vFBppu" }
   ];
 
   const grid = document.getElementById('product-grid');
@@ -447,7 +454,9 @@ in<!DOCTYPE html>
       card.className = 'card';
       card.innerHTML = `
         <div class="card-top">
-          <span class="icon-medal" aria-hidden="true">${p.icon}</span>
+          <span class="icon-medal">
+            <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.onerror=null; this.replaceWith(Object.assign(document.createElement('span'), {textContent:'🏠'}));">
+          </span>
           <span class="find-no">No. ${pad(originalIndex)}</span>
         </div>
         <h3>${p.name}</h3>
