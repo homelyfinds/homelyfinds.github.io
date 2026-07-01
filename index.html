@@ -413,25 +413,34 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const products = [
-    { name: "Coffee scoop", desc: "Level scoops, no more guesswork.", img: "assets/images/coffee-scoop.png", url: "https://a.co/d/04utX6EE" },
-    { name: "Non-stick pan", desc: "An everyday pan that earns its spot.", img: "assets/images/pan.png", url: "https://a.co/d/09lsYLnO" },
-    { name: "Rotating cable organizer", desc: "Cord chaos, contained.", img: "assets/images/rotating-cable-organizer.png", url: "https://a.co/d/02jsPxcM" },
-    { name: "Cat treat spoon", desc: "Mess-free treats for your favorite gremlin.", img: "assets/images/cat-treat-spoon.png", url: "https://a.co/d/0eCg7f0t" },
-    { name: "Lemon squeezer", desc: "Every last drop, none of the seeds.", img: "assets/images/lemon-squeezer.png", url: "https://a.co/d/08S1cUGM" },
-    { name: "Tripod clothes drying rack", desc: "Folds flat, dries fast.", img: "assets/images/drying-rack.png", url: "https://a.co/d/02Z29sXL" },
-    { name: "Defrosting tray", desc: "Skip the microwave, thaw the smart way.", img: "assets/images/defrosting-tray.png", url: "https://a.co/d/01I8APr7" },
-    { name: "Kitchen sink strainer", desc: "Catches the gunk before it's a problem.", img: "assets/images/sink-strainer.png", url: "https://a.co/d/0hoL7wOk" },
-    { name: "Ice cream sandwich scoop", desc: "Bakery-style scoops at home.", img: "assets/images/ice-cream-scoop.png", url: "https://a.co/d/05nWHqSE" },
-    { name: "Dish brush with soap dispenser", desc: "One squeeze, ready to scrub.", img: "assets/images/dish-brush.png", url: "https://a.co/d/0cdzyOwm" },
-    { name: "Sliding cabinet organizer", desc: "Finally, you can see the back shelf.", img: "assets/images/cabinet-organizer.png", url: "https://a.co/d/0fvYzR5M" },
-    { name: "Detergent pump", desc: "No more sloppy measuring caps.", img: "assets/images/detergent-pump.png", url: "https://a.co/d/03HXEUKe" },
-    { name: "Glassware polisher", desc: "Streak-free shine in seconds.", img: "assets/images/glassware-polisher.png", url: "https://a.co/d/09I3qU0Q" },
-    { name: "Portable smart TV", desc: "Stream anywhere in the house.", img: "assets/images/smart-tv.png", url: "https://a.co/d/02I7PruS" },
-    { name: "Cookie press kit", desc: "Bakery shapes, zero piping skills needed.", img: "assets/images/cookie-press.png", url: "https://a.co/d/0fNtsptK" },
-    { name: "Indoor grill", desc: "Grill season, all year round.", img: "assets/images/indoor-grill.png", url: "https://a.co/d/07LLXKmA" },
-    { name: "Wooden trivets", desc: "Protect the counters in style.", img: "assets/images/wooden-trivets.png", url: "https://a.co/d/08Qfv46z" },
-    { name: "Mini lint roller", desc: "Pocket-sized, always within reach.", img: "assets/images/lint-roller.png", url: "https://a.co/d/03hDLkAy" },
-    { name: "Bed wedge pillow", desc: "Prop up, relax, read in peace.", img: "assets/images/bed-wedge-pillow.png", url: "https://a.co/d/07vFBppu" }
+    { name: "Coffee scoop", desc: "Level scoops, no more guesswork.", img: "assets/images/coffee-scoop.png", url: "https://amzn.to/4vPpcMn" },
+    { name: "Non-stick pan", desc: "An everyday pan that earns its spot.", img: "assets/images/pan.png", url: "https://amzn.to/4oXVVMZ" },
+    { name: "Rotating cable organizer", desc: "Cord chaos, contained.", img: "assets/images/rotating-cable-organizer.png", url: "https://amzn.to/4vEWjlU" },
+    { name: "Cat treat spoon", desc: "Mess-free treats for your favorite gremlin.", img: "assets/images/cat-treat-spoon.png", url: "https://amzn.to/4eDfQNJ" },
+    { name: "Lemon squeezer", desc: "Every last drop, none of the seeds.", img: "assets/images/lemon-squeezer.png", url: "https://amzn.to/4vIGrPs" },
+    { name: "Tripod clothes drying rack", desc: "Folds flat, dries fast.", img: "assets/images/drying-rack.png", url: "https://amzn.to/4oXMXPB" },
+    { name: "Defrosting tray", desc: "Skip the microwave, thaw the smart way.", img: "assets/images/defrosting-tray.png", url: "https://amzn.to/4xXiYeJ" },
+    { name: "Kitchen sink strainer", desc: "Catches the gunk before it's a problem.", img: "assets/images/sink-strainer.png", url: "https://amzn.to/4fcvq2V" },
+    { name: "Ice cream sandwich scoop", desc: "Bakery-style scoops at home.", img: "assets/images/ice-cream-scoop.png", url: "https://amzn.to/3QVuO8u" },
+    { name: "Dish brush with soap dispenser", desc: "One squeeze, ready to scrub.", img: "assets/images/dish-brush.png", url: "https://amzn.to/4gPabp6" },
+    { name: "Sliding cabinet organizer", desc: "Finally, you can see the back shelf.", img: "assets/images/cabinet-organizer.png", url: "https://amzn.to/4apb97K" },
+    { name: "Detergent pump", desc: "No more sloppy measuring caps.", img: "assets/images/detergent-pump.png", url: "https://amzn.to/4xZ81t6" },
+    { name: "Glassware polisher", desc: "Streak-free shine in seconds.", img: "assets/images/glassware-polisher.png", url: "https://amzn.to/4wgIlXc" },
+    { name: "Portable smart TV", desc: "Stream anywhere in the house.", img: "assets/images/smart-tv.png", url: "https://amzn.to/4eIk5pO" },
+    { name: "Cookie press kit", desc: "Bakery shapes, zero piping skills needed.", img: "assets/images/cookie-press.png", url: "https://amzn.to/3SFLS2W" },
+    { name: "Indoor grill", desc: "Grill season, all year round.", img: "assets/images/indoor-grill.png", url: "https://amzn.to/4geHIsL" },
+    { name: "Wooden trivets", desc: "Protect the counters in style.", img: "assets/images/wooden-trivets.png", url: "https://amzn.to/4gkxtTP" },
+    { name: "Mini lint roller", desc: "Pocket-sized, always within reach.", img: "assets/images/lint-roller.png", url: "https://amzn.to/4aX94A0" },
+    { name: "Bed wedge pillow", desc: "Prop up, relax, read in peace.", img: "assets/images/bed-wedge-pillow.png", url: "https://amzn.to/4gfIaXz" }
+    { name: "Butter And Cheese Dispenser", desc: "Easily slice and dispense cheese, butter etc.", img: "assets/images/butter-cutter.png", url: "https://amzn.to/4woAves" }
+    { name: "Batter Breader Bowl", desc: "Even, mess-freecoating of batter.", img: "assets/images/bread-slicer.png", url: "https://amzn.to/3QNoC2y" }
+    { name: "Hand Crank Bread Slicer", desc: "Perfect bread slices everytime.", img: "assets/images/breading-bowl.png", url: "https://amzn.to/3SDibQa" }
+    { name: "Silicone Bowl Liners", desc: "Mix ingredients in mixer without dirtying the bowl.", img: "assets/images/bowl-liners.png", url: "https://amzn.to/4eD7fKW" }
+    { name: "Microwave Splatter Cover", desc: "Keeps microwave clean and avoid food splatters.", img: "assets/images/splatter-cover.png", url: "https://amzn.to/3SHHG2I" }
+    { name: "Pull out Cabinet Organizer", desc: "Sliding drawers for easy access of kitchen items.", img: "assets/images/pull-out-cabinet-organizer.png", url: "https://amzn.to/4eFyG6N" }
+    { name: "Cupcake Maker", desc: "Makes cupcake baking fun and easy.", img: "assets/images/cupcake-maker.png", url: "https://amzn.to/3SzVfBm" }
+    { name: "Fruit Slicer Cup", desc: "Neat and uniform fruit slices in seconds.", img: "assets/images/fruit-slicer.png", url: "https://amzn.to/4eScZPP" }
+    { name: "Adjustable Measuring Cup", desc: "Measure and dispense, dry or sticky ingredients without any mess.", img: "assets/images/measuring-cup.png", url: "https://amzn.to/3QxNUlf" }
   ];
 
   const grid = document.getElementById('product-grid');
